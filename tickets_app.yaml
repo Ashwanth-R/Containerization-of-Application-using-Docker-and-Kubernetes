@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tckt
+  labels:
+    app: tckt
+spec:
+  selector:
+    matchLabels:
+      app: tckt
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: tckt
+    spec:
+      containers:
+      - name: tckt
+        image: ashwanthachu/tickets_app:latest
+        imagePullPolicy: Always
+        # command: ["php", "test2.php"]
+        ports: 
+        - containerPort: 8000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tckt
+  labels:
+    app: tckt
+spec:
+  selector:
+    app: tckt
+  ports:
+  - protocol: TCP
+    port: 8000
+  type: ClusterIP

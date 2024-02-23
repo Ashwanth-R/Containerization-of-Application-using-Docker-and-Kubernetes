@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Password</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="tickets.css">
+    </head>
+    <style>
+        td {
+            width:400px;
+        }
+    </style>
+    <body>
+        <h1>CHANGE PASSWORD</h1>
+        <form action="change.php" method="post">
+            <table align="center">
+                <tr>
+                    <td><span>Enter Current Password</span></td>
+                    <td align="right"><input type="password" name="current" required></td>
+                </tr>
+                <tr>
+                    <td><span>Enter New Password</span></td>
+                    <td align="right"><input type="password" name="new" required></td>
+                </tr>
+                <tr>
+                    <td><span>Confirm New Password</span></td>
+                    <td align="right"><input type="password" name="confirm" required></td>
+                </tr>
+            </table>
+            <p style="text-align:center;"><input type="submit" value="Change" class="BUTTON"></p>
+            <p align="center"><a href="home.php"><input type="button" value="Cancel" class="BUTTON"></a></p>
+            <p align="center">On successful completion, You'll be automatically directed to your home page in just 2 seconds.</p>
+        </form>
+    </body>
+
+</html>

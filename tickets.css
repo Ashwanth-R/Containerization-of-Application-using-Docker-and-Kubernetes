@@ -1,0 +1,122 @@
+p {
+    font-family: Segoe UI;
+    font-size: 25px;
+}
+
+span {
+    color: aqua;
+    font-family: Arial;
+    text-align: right;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 35px;
+}
+
+h2 {
+    text-align: center;
+    font-family: consolas;
+    font-size: 25px;
+    color: aqua;
+}
+
+h3 {
+    font-family: Cambria;
+    color: cornflowerblue;
+    font-size: 25px;    
+}
+
+td,.header {
+    padding: 8px;
+}
+
+.Inputs {
+    width: 400px;
+} 
+
+.header {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+select {
+    font-size: 20px;
+    font-family: Cambria;
+    transition: all 1s ease;
+}
+
+select:hover {
+    font-style: italic;
+    background: black;
+    color: white;
+}
+
+input {
+    width: 150px;
+    font-family: Cambria;
+    font-size: 25px;
+    transition: all 0.5s ease;
+}
+
+input:hover {
+    width: 300px;
+    background-color: aqua;
+}
+
+.BUTTON {
+    font-family: Cambria;
+    font-size: 25px;
+    width: 250px;
+    transition: all 0.5s ease;
+}
+
+.BUTTON:hover {
+    background-color: aqua;
+    color: red;
+}
+
+.booking {
+    width: 250px;
+    font-family: Cambria;
+    transition: all 0.5s ease;
+}
+
+.booking:hover {
+    background-color: aquamarine;
+}
+
+.BUTTONS {
+    width:30px;
+    transition: all 0.5s ease;
+}
+
+.BUTTONS:hover {
+    width:300px;
+    background-color: black;
+    color: white;
+}
+
+.icon {
+    width:50px;
+    height:50px;
+}
+
+body {
+    background-color: darkslategrey;
+    color: white;
+}
+
+.CLOCK {
+    font-family: cursive;
+    font-size: 35px;
+    color: hotpink;
+}
+
+.ICONS {
+    padding: 20px;
+}

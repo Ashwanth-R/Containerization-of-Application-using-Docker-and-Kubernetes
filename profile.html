@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Profile</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="tickets.css">
+    </head>
+    <body>
+        <h1>CREATE PROFILE</h1>
+        <br><hr>
+        <p>Please add your personal details for further processing.</p>
+        <form action="register.php" method="post">
+            <table align="center">
+                <tr>
+                    <td>
+                        <span>Enter your name</span><br>
+                        <input type="text" class="Inputs" required name="NAME" width="150px">
+                    </td>
+                    <td>
+                        <span>Enter your Age</span><br>
+                        <input type="number" class="Inputs" required min="10" max="150" name="AGE" width="150px">
+                    </td>
+                    <td>
+                        <span>Enter your Gender</span><br>
+                        <select name="GENDER" width="150px">
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Enter your Phone Number</span><br>
+                        <input type="text" class="Inputs" required name="PHONE" width="150px">
+                    </td>
+                    <td>
+                        <span>Enter your Door Number</span><br>
+                        <input type="text" class="Inputs" required name="DOOR" width="150px">
+                    </td>
+                    <td>
+                        <span>Enter your Street</span><br>
+                        <input type="text" class="Inputs" required name="STREET" width="150px">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Enter your Area</span><br>
+                        <input type="text" class="Inputs" required name="AREA"  width="150px" placeholder="like Mylapore, Anna Nagar">
+                    </td>
+                    <td>
+                        <span>Enter your City</span><br>
+                        <input type="text" class="Inputs" required name="CITY" width="150px">
+                    </td>
+                    <td>
+                        <span>Enter your State</span><br>
+                        <input type="text" class="Inputs" required name="STATE" width="150px">
+                    </td>
+                </tr>
+            </table>
+            <p align="center">
+            <input type="submit" value="Register" class="BUTTON"></p><hr>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  mysqldb:
+    image: mysql:8.0
+    container_name: mysql
+    ports:
+      - "30000:3306"
+    environment:
+      MYSQL_DATABASE: tickets
+      #MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: mypassword
+    # volumes:
+    #   - "./mysqldb.sql:/docker-entrypoint-initdb.d/mysqldb.sql"
+  app:
+    build: .
+    command: sh -c "docker-php-entrypoint php-fpm && docker exec tickets_app_1 php /var/www/html/test2.php"
+    depends_on:
+      - mysqldb
+    ports:
+      - "8000:8000"
+ 
